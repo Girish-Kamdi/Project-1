@@ -1,0 +1,735 @@
+/* ===== font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* ===== css reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== root ===== */
+:root {
+    --main-color: #fff;
+    --text-color: rgb(222, 78, 26);
+    --bg-color: #2c3e50;
+    --second-bg-color: #0f4c81;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* ===== header ===== */
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    padding: 1.2rem 5rem;
+    justify-content: space-between;
+    z-index: 100;
+    transition: .7s ease;
+}
+
+header.sticky {
+    background: #0f4c81;
+}
+
+.logo {
+    font-size: 1.7rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.white {
+    color: var(--text-color);
+}
+
+/* ===== navbar ===== */
+#navbar {
+    margin-top: .2rem;
+}
+
+#navbar a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    transition: .2s ease;
+}
+
+#navbar a:hover,
+#navbar a.active {
+    color: var(--text-color);
+}
+
+#menu-icon {
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+
+/* ===== home ===== */
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.home {
+    background: url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 14rem 5rem;
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.content {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.para {
+    color: var(--main-color);
+    width: 50rem;
+}
+
+button {
+    margin-top: 3rem;
+    padding: .7rem 1.4rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--main-color);
+    background: var(--bg-color);
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+button:hover {
+    border: 3px solid var(--bg-color);
+    background: transparent;
+}
+
+.home-img {
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    width: 30rem;
+    height: 30rem;
+}
+
+/* ===== shop ===== */
+.shop {
+    background: var(--bg-color);
+}
+
+.shop .title {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.buy-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buy-box {
+    background-color: var(--main-color);
+    width: 23rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+
+.buy-box img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    margin: auto;
+    transition: .2s ease;
+}
+
+.buy-box img:hover {
+    width: 11rem;
+    height: 11rem;
+}
+
+.buy-box .para {
+    font-weight: 600;
+    color: var(--bg-color);
+    width: 20rem;
+    text-align: center;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-box a button {
+    margin-top: 4rem;
+    transition: .2s ease;
+}
+
+.buy-box a button:hover {
+    font-weight: 900;
+    color: var(--bg-color);
+}
+
+.box-1 a button {
+    margin-top: 7rem;
+}
+
+.box-3 a button {
+    margin-top: 5.6rem;
+}
+
+/* ===== gaming product ===== */
+.product {
+    background: var(--bg-color);
+}
+
+.product .title {
+    text-align: center;
+}
+
+.product .buy-container .box-1 a button {
+    margin-top: 4rem;
+}
+
+.product .buy-container .box-2 a button {
+    margin-top: 11.6rem;
+}
+
+.product .buy-container .box-3 a button {
+    margin-top: 7rem;
+}
+
+/* ===== chart ===== */
+.chart {
+    background: var(--bg-color);
+    justify-content: center;
+}
+
+.chart .title {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.chart .img {
+    display: flex;
+    justify-content: center;
+}
+
+.chart img {
+    border-radius: 30px;
+    width: 70%;
+    height: 70vh;
+}
+
+/* ===== news ===== */
+.news {
+    background-color: var(--bg-color);
+}
+
+.news .title {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.news .template-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.news .template-container .template {
+    width: 25rem;
+    height: 30rem;
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.news .template-container .template .para {
+    padding: 1rem 1rem;
+    text-align: center;
+    width: 25rem;
+    height: 100%;
+    color: transparent;
+    font-weight: 900;
+    transition: 1s ease;
+}
+
+.news .template-container .first {
+    background: url(images/gta\ 6.jpg) no-repeat;
+    background-size: cover;
+}
+
+.news .template-container .template .first-para:hover {
+    border-radius: 10px;
+    background: rgba(255, 248, 220, 0.491);
+    color: orangered;
+}
+
+.news .template-container .second {
+    background: url(images/evotinction.jpg) no-repeat;
+    background-size: cover;
+}
+
+.news .template-container .template .second-para:hover {
+    background: rgba(255, 248, 220, 0.491);
+    border-radius: 10px;
+    color: white;
+}
+
+.news .template-container .third {
+    background: url(images/cod.jpg) no-repeat;
+    background-size: cover;
+}
+
+.news .template-container .template .third-para:hover {
+    border-radius: 10px;
+    background: rgba(255, 248, 220, 0.491);
+    color: green;
+}
+
+/* ===== contact ===== */
+.contact {
+    background-color: var(--bg-color);
+}
+
+.contact .title {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.contact .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .inputs input,
+.contact .inputs textarea {
+    border-radius: 6px;
+    font-weight: 900;
+    margin: 1rem 15rem;
+    height: 2.5rem;
+    padding: 1rem 1rem;
+    resize: none;
+}
+
+.contact .inputs textarea {
+    height: 15rem;
+}
+
+.contact .contact-button {
+    margin-top: 2rem;
+    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+    font-weight: 900;
+    font-size: 1.1rem;
+    background: var(--main-color);
+    transition: .2s ease;
+}
+
+.contact .contact-button:hover {
+    color: var(--main-color);
+    background: transparent;
+}
+
+/* ===== footer ===== */
+footer {
+    display: flex;
+    height: 4rem;
+    background: var(--second-bg-color);
+    padding: 1.2rem 2rem;
+}
+
+footer .para {
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+footer .icon {
+    position: absolute;
+    right: 2rem;
+    margin-top: -.3rem;
+    cursor: pointer;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    padding: .6rem .7rem;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+footer .icon:hover {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    transform: rotate(360deg);
+    border: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1290px) {
+    .news .template-container .template {
+        width: 23rem;
+    }
+
+    .news .template-container .template .para {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 1225px) {
+    .home-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .chart img {
+        border-radius: 30px;
+        width: 60rem;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1190px) {
+    .buy-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .news .template-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .news .template-container .template {
+        width: 20rem;
+    }
+
+    .news .template-container .template .para {
+        width: 20rem;
+        overflow: hidden;
+    }
+
+    .buy-box {
+        width: 20rem;
+    }
+
+    .buy-box .para {
+        width: 18rem;
+    }
+
+    .box-1 a button {
+        margin-top: 6rem;
+    }
+
+    .box-2 a button {
+        margin-top: 3rem;
+    }
+
+    .box-3 a button {
+        margin-top: 6rem;
+    }
+
+    .product .buy-container .box-1 a button {
+        margin-top: 2.8rem;
+    }
+
+    .product .buy-container .box-2 a button {
+        margin-top: 10.2rem;
+    }
+
+    .product .buy-container .box-3 a button {
+        margin-top: 7rem;
+    }
+
+    .contact .contact-button {
+        padding: .5rem 1.5rem;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .contact .inputs input,
+    .contact .inputs textarea {
+        margin: 1rem 10rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    .buy-box {
+        width: 18rem;
+    }
+
+    .buy-box .para {
+        width: 16rem;
+    }
+
+    .box-1 a button {
+        margin-top: 6rem;
+    }
+
+    .box-2 a button {
+        margin-top: 1.6rem;
+    }
+
+    .box-3 a button {
+        margin-top: 4.6rem;
+    }
+
+    .product .buy-container .box-1 a button {
+        margin-top: 1.5rem;
+    }
+
+    .product .buy-container .box-2 a button {
+        margin-top: 10.6rem;
+    }
+
+    .product .buy-container .box-3 a button {
+        margin-top: 6rem;
+    }
+
+    .chart img {
+        width: 50rem;
+    }
+
+    .news .template-container .template {
+        width: 18rem;
+    }
+
+    .news .template-container .template .para {
+        width: 18rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 915px) {
+    .buy-box {
+        height: 100%;
+    }
+
+    #navbar {
+        position: absolute;
+        width: 100%;
+        top: 90%;
+        left: 0;
+        text-align: center;
+        background: var(--second-bg-color);
+        display: none;
+    }
+
+    #navbar a {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        display: block;
+    }
+
+    #navbar.close {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    .center {
+        display: flex;
+        /* width: 90%; */
+        justify-content: center;
+    }
+
+    /* .w {
+        width: 100%;
+    } */
+
+    .buy-container {
+        display: block;
+        justify-content: center;
+    }
+
+    .buy-box {
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+    .buy-box .para {
+        width: 100%;
+    }
+
+    .news .template-container {
+        display: block;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .news .template-container .template {
+        margin-top: 1rem;
+    }
+
+    .news .template-container .template .para,
+    .news .template-container .template {
+        width: 23rem;
+        overflow: hidden;
+    }
+
+    .chart img {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .para {
+        width: 40rem;
+    }
+
+    .contact .contact-button {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 855px) {
+
+    .contact .inputs input,
+    .contact .inputs textarea {
+        margin: 1rem 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .para {
+        width: 30rem;
+    }
+
+    footer {
+        height: 5rem;
+    }
+
+    footer .icon {
+        margin-top: .1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .product .title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 590px) {
+    footer {
+        padding: .4rem .4rem;
+        height: 6rem;
+    }
+
+    footer .para {
+        width: 90%;
+    }
+
+    .contact .inputs input,
+    .contact .inputs textarea {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .news .template-container .template {
+        width: 95%;
+        overflow: hidden;
+    }
+    .news .template-container .template .para {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .chart img {
+        width: 18rem;
+        height: 12rem;
+    }
+
+    .header {
+        padding: 1rem 1rem;
+    }
+
+    #menu-icon {
+        margin-top: .3rem;
+    }
+
+    .home {
+        padding: 10rem 1rem;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    .buy-box {
+        width: 18rem;
+    }
+
+    .box-3 a button {
+        margin-top: 3rem;
+    }
+
+    .box-1 a button {
+        margin-top: 4rem;
+    }
+
+    .product .buy-container .box-3 a button {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .chart img {
+        width: 95%;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .chart img {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .chart img {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .chart img {
+        height: 10rem;
+    }
+}
